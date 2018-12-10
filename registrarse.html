@@ -1,0 +1,62 @@
+<DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <title>Blog API-Registrate</title>
+		
+		<link rel="shortcut icon" href="asset/css/images/icons/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="app/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="app/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="app/css/animate-custom.css" />
+    </head>
+    <body>
+        <div class="container">
+        <div class="codrops-top">
+            <a><strong>Juan Bueno</strong></a>
+                <div class="clr"></div>
+        </div>
+            <header>
+                <h1>Blog <span>API</span></h1>
+            </header>
+            <section>				
+                <div id="container_demo" >
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="script" autocomplete="on"> 
+                                <h1>Registrarse</h1>     
+                                <p> 
+                                    <label>Nombre de Usuario</label>
+                                    <input placeholder="Nombre de Usuario" id="nombre"  />
+                                </p>
+                                <p> 
+                                    <label> Correo Electronico</label>
+                                    <input id="email" placeholder="Correo Electronico"/>  
+                                </p>
+                                <p> 
+                                    <label>Tu contrasena </label>
+                                    <input type="password" id="password1" placeholder="Contrasena"/>
+                                </p>
+                                <p> 
+                                    <label>Por favor, confirme su contrasena </label>
+                                    <input id="password2" type="password2" placeholder="Contrasena"/>
+                                </p>
+                                <p class="signin button"> 
+                                   <button id="registrarse">Registrarse</button> 
+									
+								</p>
+                                <p class="change_link">  
+									Ya estas registrado ?
+									<a href="index.html" class="to_register"> Accesar </a>
+								</p>
+                            </form>
+                        </div>
+             </div>
+                    </div>
+                </div>  
+            </section>
+        </div>
+        <script src="./asset/js/Jquery3.3.1.js"></script>
+        <script src="./app/js/registrar.js"></script>
+    </body>
+</html>
