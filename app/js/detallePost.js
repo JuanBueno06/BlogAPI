@@ -148,7 +148,7 @@ function obtenerComentarios(postId) {
     var comentario = "";
     var token = localStorage.getItem("BlogApi_token");
 
-    var htmlComent = "<li> {coment} {fecha}   </li>"
+    var htmlComent = "<li> {coment} {fecha}  </li>"
 
     fetch(`http://68.183.27.173:8080/post/${postId}/comment`,
         {

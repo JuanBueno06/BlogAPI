@@ -64,12 +64,12 @@ function cargarPost() {
                 <span>by <a href="#">{username} - ({email})</a></span> / 
                 <span><i class="fa fa-clock-o"></i>{fecha}</span> /
                 <span><i class="fas fa-comments"></i> <a href="#">{comentarios}</a></span> /
-                <span><i class="fas fa-hand-holding-heart"></i>{likes}</span> /
-                <span><i class="far fa-eye"></i>{viwes}</span> 
+                <span><i class="fas fa-hand-holding-heart"></i><span id= "BlogApi-like-{postid}">{likes}</span></span> /
+                <span><i class="far fa-eye"></i><span id= "BlogApi-viwes-{postid}">{viwes}</span></span> 
             </div>
             <p>{cuerpo}</p>
             <p><i postid="{postid}" tieneLike="{tieneLike}" class="fas fa-hand-holding-heart genlike" id="{likePostId}"></i>
-      <span id= "BlogApi-like-{postid}"></span></p>
+      </p>
         </div>
     </article>
 
@@ -114,6 +114,7 @@ function cargarPost() {
                     .replace("{email}", post.userEmail)
                     .replace("{tags}", tags)
                     .replace("{fecha}", fecha)
+                    .replace("{postid}", post.id)
                     .replace("{postid}", post.id)
                     .replace("{postid}", post.id)
                     .replace("{postid}", post.id)
